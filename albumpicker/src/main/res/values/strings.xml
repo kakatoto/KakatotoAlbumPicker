@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlbumPicker</string>
+
+    <string name="need_permission">You need Permission [Setting] > [Permission]</string>
+    <string name="not_allowed">you are not allowed to access</string>
+    <string name="select_image">Please select a image</string>
+</resources>
