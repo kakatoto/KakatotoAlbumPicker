@@ -2,12 +2,17 @@
 # Setup
 
 ##### Gradle
-We will use cwac-camera for take a picture. And get library from jitpack.io
+We will use cwac-camera for take a picture. And use databinding And get library from jitpack.io
+
 
     repositories {
         maven { url "https://jitpack.io" }
     }
 
+    dataBinding {
+        enabled = true
+    }
+    
     dependencies {
         compile 'com.github.kakatoto:KakatotoAlbumPicker:1.0.0'
     }
