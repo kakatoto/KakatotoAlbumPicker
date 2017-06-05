@@ -7,6 +7,8 @@
     <color name="white">#ffffffff</color>
     <color name="black">#ff000000</color>
     <color name="line_grey">#e2e3e5</color>
+
+    <color name="dark_gray">#FF5D5D5D</color>
     <color name="light_gray">#afffffff</color>
 
 

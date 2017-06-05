@@ -60,7 +60,7 @@ public class AlbumPickerBuilder {
 
     @Subscribe
     public void onEventImageUpload(EventImageUpload event){
-        singleListener.onSingleSelected(SelInfo.getInstance().getUriList());
+        singleListener.onSelected(SelInfo.getInstance().getUriList());
     }
 
     public void create(){
@@ -75,6 +75,6 @@ public class AlbumPickerBuilder {
     }
 
     public interface OnImageSingleSelectedListener {
-        void onSingleSelected(ArrayList<Uri> imageList);
+        void onSelected(ArrayList<Uri> imageList);
     }
 }

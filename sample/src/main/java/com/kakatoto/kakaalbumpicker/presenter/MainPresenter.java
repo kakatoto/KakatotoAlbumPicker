@@ -44,7 +44,6 @@ public class MainPresenter implements MainContract.Presenter {
     }
 
     public void onSinglePicker() {
-        Log.d(TAG, "onSinglePicker: ");
         new TedPermission(context)
                 .setPermissionListener(new PermissionListener() {
                     @Override
@@ -52,7 +51,7 @@ public class MainPresenter implements MainContract.Presenter {
                         AlbumPickerBuilder albumPickerBuilder = new AlbumPickerBuilder.Builder(context).setTitle("").
                                 setOnImageSelectedListener(new AlbumPickerBuilder.OnImageSingleSelectedListener() {
                                     @Override
-                                    public void onSingleSelected(ArrayList<Uri> imageList) {
+                                    public void onSelected(ArrayList<Uri> imageList) {
                                         singleContent = imageList.get(0);
                                         view.setImeageContent(singleContent);
                                     }
@@ -73,7 +72,6 @@ public class MainPresenter implements MainContract.Presenter {
     }
 
     public void onMultiPicker() {
-        Log.d(TAG, "onMultiPicker: ");
         new TedPermission(context)
                 .setPermissionListener(new PermissionListener() {
                     @Override
@@ -81,7 +79,7 @@ public class MainPresenter implements MainContract.Presenter {
                         AlbumPickerBuilder albumPickerBuilder = new AlbumPickerBuilder.Builder(context).setTitle("").isMulti(true).
                                 setOnImageSelectedListener(new AlbumPickerBuilder.OnImageSingleSelectedListener() {
                                     @Override
-                                    public void onSingleSelected(ArrayList<Uri> imageList) {
+                                    public void onSelected(ArrayList<Uri> imageList) {
                                         multiContents.clear();
                                         for (Uri uri : imageList)
                                             multiContents.add(uri);
