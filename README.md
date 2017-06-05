@@ -61,3 +61,9 @@ Add permission for Camera, External Storage.
 ##### function
 * setTitle("title") (default : "")
 * isMulti(true) (default : false) 
+
+
+##### ScreenShot
+![ScreenShot](https://github.com/kakatoto/KakatotoAlbumPicker/blob/master/screenshot0.jpeg
+
+![alt text](https://github.com/kakatoto/KakatotoAlbumPicker/blob/master/screenshot1.gif)
