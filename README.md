@@ -64,5 +64,4 @@ Add permission for Camera, External Storage.
 
 
 ##### ScreenShot
-![ScreenShot](https://github.com/kakatoto/KakatotoAlbumPicker/blob/master/screenshot0.jpeg)
 ![alt text](https://github.com/kakatoto/KakatotoAlbumPicker/blob/master/screenshot1.gif)
